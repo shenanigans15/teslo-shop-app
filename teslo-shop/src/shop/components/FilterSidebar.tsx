@@ -17,7 +17,12 @@ export const FilterSidebar = () => {
       : [...currentSizes, size]
 
     searchParams.set('page', '1')
-    searchParams.set('sizes', newSizes.join(','))
+
+    if (!newSizes.join(',').length) {
+      searchParams.delete('sizes')
+    } else {
+      searchParams.set('sizes', newSizes.join(','))
+    }
     setSearchParams(searchParams)
   }
 

@@ -11,7 +11,7 @@ export const CustomHeader = () => {
   const { gender } = useParams()
 
   const inputRef = useRef<HTMLInputElement>(null)
-  const query = searchParams.get('query') || ''
+  const query = searchParams.get('q') || ''
 
   const handleSearch = (event: KeyboardEvent<HTMLInputElement>) => {
     if (event.key !== 'Enter') return
