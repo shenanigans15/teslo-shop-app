@@ -1,5 +1,5 @@
 import { ProductPage } from './shop/pages/product/ProductPage'
-import { createBrowserRouter, createHashRouter, Navigate } from 'react-router'
+import { createHashRouter, Navigate } from 'react-router'
 import { ShopLayout } from './shop/layouts/ShopLayout'
 import { HomePage } from './shop/pages/home/HomePage'
 import { GenderPage } from './shop/pages/gender/GenderPage'
